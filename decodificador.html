@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="decodificador.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="main">
+        <img src="Vector.png" class="logo" onclick="home()">
+        <section class="div-principal">
+            <form action="">
+                <textarea class="text-input" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder="Digite seu texto"></textarea>
+                <div class="form-group">
+                    <img src="alerta.png" class="alerta">
+                    <label for="input-texto">Apenas letras minúsculas e sem acento.</label>
+                </div>
+                <div class="botones-div">
+                    <input class="btn-criptografar" type="submit" value="Criptografar" id="btn-criptografar">
+                    <input class="btn-descriptografar" type="submit" value="Descriptografar" id="btn-descriptografar">
+                </div>
+            </form>
+        </section>
+
+        <section class="message-box">
+            <div id="div-desaparece" class="message-box-div">
+                <img src="pessoa.png">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            </div>
+            <div id="div-aparece">
+                <textarea class="div-mensaje" type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+                <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright D.Design - 2022</p>
+    </footer>
+
+    <script src="decodificador.js"></script>
+
+</body>
+</html>
